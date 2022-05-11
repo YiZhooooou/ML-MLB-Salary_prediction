@@ -153,7 +153,7 @@ clf.fit(X, y)
 y_test = svm_test['POS'].to_numpy().astype('float64')
 X_test = svm_test[svm_features].to_numpy().astype('float64')
 res = clf.predict(X_test)
-res
+
 
 right_count = 0
 for i in range(res.shape[0]):
